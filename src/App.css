@@ -1,0 +1,34 @@
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  position: relative; /* potrzebne, żeby balatro-container był absolutny względem tego kontenera */
+  overflow: hidden;
+}
+
+/* Balatro (canvas) container - musi być absolutny i pod wszystkimi elementami aplikacji */
+.balatro-container {
+  position: absolute;
+  inset: 0;            /* top:0; right:0; bottom:0; left:0; */
+  width: 100%;
+  height: 100%;
+  z-index: 0;          /* tło */
+  pointer-events: none;/* nie blokuje klików na stronach */
+  overflow: hidden;
+}
+
+/* Upewnij się, że zawartość aplikacji jest nad balatro */
+.app-content {
+  position: relative;
+  z-index: 10;
+  background: transparent !important;
+  color: white;
+}

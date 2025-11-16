@@ -1,0 +1,44 @@
+.constructors-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  place-content: center; /* centruje całą siatkę pionowo i poziomo */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+
+  padding: 40px;
+  background: transparent;
+  color: white;
+  box-sizing: border-box;
+}
+
+.constructor-card {
+  width: 260px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.25s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.constructor-card:hover {
+  transform: scale(1.05);
+  border-color: red;
+}
+
+.constructor-img {
+  width: 180px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.constructor-name {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
