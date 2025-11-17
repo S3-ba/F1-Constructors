@@ -1,16 +1,64 @@
-# React + Vite
+# F1 Constructors
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that showcases and describes Formula 1 constructors.  
+The project provides an easy-to-browse overview of all current F1 teams, including essential information, history, and key details.
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of this project is to deliver a clean and user-friendly interface that allows users to explore Formula 1 constructors in one place.  
+Each constructor includes structured information such as:
 
-## React Compiler
+- Team name  
+- Country  
+- Founding year  
+- Championship wins  
+- General description  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app is ideal for F1 fans who want a quick reference to all constructors.
 
-## Expanding the ESLint configuration
+## How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Built with **React** and **Vite** for fast development and efficient builds.  
+- Uses **react-router-dom** to handle client-side navigation between different views (e.g., teams list, team details).  
+- Designed as a **Single Page Application (SPA)** for smooth transitions and fast interaction.  
+- Simple, extendable structure — new teams or views can be added easily by updating data and components.
+
+## Technologies & Dependencies
+
+Key libraries used:
+
+- **React** — UI framework  
+- **Vite** — build tool and dev server  
+- **react-router-dom** — routing and navigation  
+- (Optional) Any CSS framework you choose  
+
+All necessary dependencies are listed in `package.json`.
+
+## Installation Guide
+
+Follow these steps to install and run the project locally:
+
+### 1. Clone the repository:
+git clone https://github.com/S3-ba/F1-Constructors.git
+cd F1-Constructors
+
+### 2. Install dependencies:
+Make sure you have Node.js installed, then run:
+npm install
+
+Or, if you’re using yarn:
+yarn
+
+### 3. Install react-router-dom (only if missing):
+npm install react-router-dom
+
+### 4. Start the development server:
+npm run dev
+
+Then open your browser and go to:
+http://localhost:3000 (or the port shown in your terminal)
+
+### 5. Build for production (optional):
+npm run build
+
+The optimized output will appear in the dist/ directory.
