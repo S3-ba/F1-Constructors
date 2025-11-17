@@ -3,7 +3,7 @@
   min-height: 100vh;
 
   display: grid;
-  place-content: center; /* centruje całą siatkę pionowo i poziomo */
+  place-content: center; 
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 

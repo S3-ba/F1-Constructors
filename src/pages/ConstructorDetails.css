@@ -4,7 +4,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: black; /* pełne czarne tło na życzenie */
+  background: black; 
 }
 
 .details-box {
